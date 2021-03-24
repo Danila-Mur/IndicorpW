@@ -1,1 +1,21 @@
-header.header HEADER
+header.header.header--mobile
+  .container
+    .header__inner
+      a.header__logo.logo(href="#")
+        img(src="images/indicorp/logo.svg", alt="Logo", class="logo__img")
+      nav.nav.is-open
+        ul.nav__list
+          li.nav__item  
+            a.nav__link(href="#") Home
+          li.nav__item
+            a.nav__link(href="#") Product
+          li.nav__item
+            a.nav__link(href="#") Pricing
+          li.nav__item
+            a.nav__link(href="#") Contact
+      button.header__search(type="button")
+        img.header__search-img(src="images/indicorp/search-btn.svg", alt="Search")
+      button.header__basket(type="button")
+        img.header__basket-img(src="images/indicorp/basket.svg", alt="Basket")
+      button.header__togler(type="button")
+        img.header__togler-img(src="images/indicorp/navbar-toggler.svg", alt="Togler")

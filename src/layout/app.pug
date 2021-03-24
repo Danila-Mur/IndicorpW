@@ -12,11 +12,11 @@ html
     link(rel='stylesheet' href='webpack/css/vendors.css?' + hash)
     link(rel='stylesheet' href='webpack/css/app.css?' + hash)
   body
-    .wrapper
+    .home
       include header/header
-      .content
-        main.main
-          block content
-      include footer/footer
+      block intro
+    main.main
+      block main
+    include footer/footer
     script(src='webpack/js/vendors.js?' + hash)
     script(src='webpack/js/app.js?' + hash)
