@@ -7,6 +7,7 @@ import "./advice";
 import "./service";
 import "./clients";
 import "./newsletter"
+import "./touch";
 
 
 export default () => {};
