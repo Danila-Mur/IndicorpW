@@ -1,0 +1,53 @@
+.consulting 
+  padding: 38px 0
+  background-color: #fff
+
+.consulting__content 
+  display: flex
+  align-items: center
+  justify-content: space-between
+  padding-right: 13px
+
+.consulting__title 
+  margin-bottom: 10px
+  padding-top: 3px
+  color: $color-text-base
+  font-weight: $font-weight-bold
+  font-size: 24px
+  line-height: 1.35
+  letter-spacing: 0.1px
+
+.consulting__text 
+  margin: 0
+  font-weight: $font-weight-medium
+  letter-spacing: 0.2px
+  color: $color-second
+
+.consulting__submit 
+  padding: 15px 40px
+  font-weight: $font-weight-bold
+  line-height: 2
+  letter-spacing: 0.2px
+  border-radius: 5px
+  background-color: #ffa62b
+  color: #ffffff
+  text-decoration: none
+
+@media ( max-width: 991px )
+  .consulting__content 
+    flex-direction: column
+    align-items: start
+  
+  .consulting__header 
+    margin: 0 0 47px
+
+@media ( max-width: 420px )
+  .consulting 
+    padding-top: 0
+    padding-bottom: 0
+  
+  .consulting__content 
+    padding: 37px 50px
+  
+  .consulting__title 
+    padding-top: 0
