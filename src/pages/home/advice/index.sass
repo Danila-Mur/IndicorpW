@@ -1,0 +1,103 @@
+.advice 
+  padding: 125px 0px 80px 0px
+  background-color: #fafafa
+
+.advice__content 
+  max-width: 470px
+  margin: 0px auto 45px
+  text-align: center
+
+.advice__title 
+  margin: 0px 0px 10px 0px
+
+.advice__title--second 
+  color: #252b42
+  font-weight: 700
+  font-size: 40px
+  line-height: 1.45
+  letter-spacing: 0.2px
+
+.advice__text 
+  margin: 0
+  color: #737373
+  font-weight: 500
+  letter-spacing: 0.2px
+
+.advice__cards 
+  display: flex
+  align-items: flex-start
+
+.advice__card 
+  display: flex
+  flex-direction: column
+  width: calc(25% - 30px)
+  margin-right: 38px
+  background-color: #fff
+
+.advice__card:last-child 
+  margin-right: 0
+
+.advice__card-content 
+  padding: 30px 25px 30px 30px
+
+.advice__card-title 
+  margin: 0px 0px 15px 0px
+  color: #252b42
+  font-weight: 700
+  font-size: 16px
+  line-height: 1.5
+  letter-spacing: 0.1px
+
+.advice__card-text 
+  margin: 0
+  color: #737373
+  font-weight: 500
+  line-height: 1.45
+  letter-spacing: 0.2px
+
+.advice__card-text--mobile 
+  display: none
+
+.advice__card-img 
+  margin-top: auto
+
+@media ( max-width: 991px )
+  .advice__cards 
+    flex-wrap: wrap
+    justify-content: center
+  
+  .advice__card 
+    width: 40%
+    margin: 0px 30px 30px 0px
+  
+@media ( max-width: 640px )
+  .advice__cards 
+    flex-direction: column
+    align-items: center
+  
+  .advice__card 
+    width: 68%
+    margin-right: 0
+  
+  .advice__card-text--none 
+    display: none
+  
+  .advice__card-text--mobile 
+    display: block
+    margin-bottom: 0
+    color: #737373
+    font-weight: 500
+    line-height: 1.45
+    letter-spacing: 0.2px
+  
+@media ( max-width: 420px )
+  .advice 
+    padding-top: 82px
+  
+  .advice__content 
+    max-width: 225px
+    margin-bottom: 75px
+  
+  
+  
+  
