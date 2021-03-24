@@ -6,6 +6,7 @@ import "./choose";
 import "./advice";
 import "./service";
 import "./clients";
+import "./newsletter"
 
 
 export default () => {};
