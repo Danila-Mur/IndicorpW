@@ -1,0 +1,140 @@
+.service 
+  padding: 100px 0px
+  background-color: #fff
+
+.service__header 
+  max-width: 511px
+  margin: 0 auto 100px
+  text-align: center
+
+.service__title 
+  margin-bottom: 15px
+
+.service__title--mobile 
+  display: none
+
+.service__title--second 
+  color: $color-text-base
+  font-weight: $font-weight-bold
+  font-size: 40px
+  line-height: 1.45
+  letter-spacing: 0.2px
+
+.service__text 
+  margin: 0px
+  color: $color-second
+  font-weight: $font-weight-medium
+  line-height: 1.45
+  letter-spacing: 0.2px
+
+.service__content 
+  display: flex
+  justify-content: space-between
+  align-items: flex-start
+
+.service__content-video 
+  width: 600px
+  height: 442px
+
+.service__video 
+  position: relative
+
+.service__poster 
+  position: absolute
+  width: 100%
+
+.service__button-play 
+  position: absolute
+  left: 0
+  right: 3px
+  top: -15px
+  bottom: 0
+  width: 100px
+  height: 100px
+  margin: auto
+  padding: 35px 37px
+  background-color: #00a0c1
+  border: none
+  border-radius: 50%
+  cursor: pointer
+
+.service__content-box 
+  max-width: 334px
+  padding-top: 18px
+  padding-left: 7px
+
+.service__content-title 
+  margin-bottom: 10px
+
+.service__content-text 
+  margin-bottom: 50px
+  color: $color-second
+  font-weight: $font-weight-medium
+  line-height: 1.45
+  letter-spacing: 0.2px
+
+.service__item 
+  display: flex
+  align-items: start
+  margin-bottom: 30px
+
+.service__item:last-child 
+  margin-bottom: 0
+
+.service__content-img 
+  margin-right: 20px
+
+.service__item-title 
+  margin-bottom: 5px
+  color: $color-text-base
+  font-weight: $font-weight-bold
+  font-size: 16px
+  letter-spacing: 0.1px
+
+.service__item-text 
+  color: $color-second
+  font-weight: $font-weight-semi-bold
+  line-height: 1.7
+  letter-spacing: 0.2px
+
+@media ( max-width: 1280px )
+  .service__content-video 
+    width: 333px
+    height: 440px
+  
+  .service__poster 
+    width: 333px
+    height: 440px
+  
+@media ( max-width: 991px )
+  .service__content 
+    display: flex
+    flex-direction: column
+  
+  .service__video 
+    margin-right: 25px
+    margin-bottom: 30px
+
+@media ( max-width: 420px )
+  .service 
+    padding-top: 90px
+  
+  .service__header 
+    max-width: 324px
+    margin: 0 auto 118px
+  
+  .service__title 
+    display: none
+
+  .service__button-play
+    top: -4px
+    right: -7px
+  
+  .service__title--mobile 
+    display: block
+    margin-top: 0
+    margin-bottom: 10px
+  
+  .service__content-box 
+    padding-top: 37px
+    padding-left: 0
