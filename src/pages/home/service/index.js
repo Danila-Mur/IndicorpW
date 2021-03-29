@@ -1,6 +1,6 @@
 import "./index.sass";
 
-const buttonPlay = document.querySelector(".service__button-play");
+const buttonPlay = document.querySelector(".js__button-play");
 const videoPoster = document.querySelector(".service__poster");
 const video = document.querySelector(".service__content-video");
 

@@ -2,10 +2,17 @@
   padding: 80px 0px
   background-color: $color-background
 
+  +max-w($mobile-sm)
+    padding-top: 100px
+    padding-bottom: 70px
+
 .choose__content 
   max-width: 511px
   margin: 0 auto 50px
   text-align: center
+  
+  +max-w($mobile-sm)
+    margin-bottom: 94px
 
 .choose__title 
   margin-bottom: 7px
@@ -28,10 +35,21 @@
   grid-template-columns: repeat(auto-fill, minmax(238px, 1fr))
   column-gap: 30px
 
+  +max-w($laptop-md)
+    row-gap: 30px;
+
 .choose__card 
   padding: 27px 32px
   background-color: #fff
   text-align: center
+
+  +max-w($mobile-md)
+    width: 230px
+    justify-self: center
+    margin-right: 0  
+
+  +max-w($mobile-sm)
+    padding: 35px 21px
 
 .choose__card-img 
   margin: 0px 0px 10px 0px
@@ -48,26 +66,4 @@
   color: $color-second
   font-weight: $font-weight-bold
   font-size: 16px
-  letter-spacing: 0.1px
-
-@media (max-width: 1280px)   
-  .choose__cards
-    row-gap: 30px;
-
-@media ( max-width: 640px )
-  .choose__card 
-    width: 230px
-    justify-self: center
-    margin-right: 0  
-
-@media  ( max-width: 420px )
-  .choose 
-    padding-top: 100px
-    padding-bottom: 70px
-  
-  .choose__content 
-    margin-bottom: 94px
-
-  .choose__card 
-    padding: 35px 21px
-  
+  letter-spacing: 0.1px 

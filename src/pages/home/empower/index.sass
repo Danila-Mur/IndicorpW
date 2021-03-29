@@ -2,10 +2,20 @@
   margin-bottom: 131px
   padding-top: 80px
 
+  +max-w($mobile-lg)
+    margin-bottom: 0  
+    padding-bottom: 169px
+
 .empower__content 
   max-width: 510px
   margin-bottom: 80px
   letter-spacing: 0.2px
+
+  +max-w($mobile-md)
+    display: flex
+    flex-direction: column
+    align-items: center
+    max-width: 333px
 
 .empower__title 
   margin-bottom: 33px
@@ -14,6 +24,16 @@
   font-size: 58px
   line-height: 1.38
 
+  +max-w($mobile-md)
+    margin-bottom: 40px
+    font-weight: $font-weight-bold
+    font-size: 40px
+    line-height: 1.45
+    text-align: center
+
+  +max-w($mobile-xs)
+    font-size: 30px
+
 .empower__text 
   padding-right: 133px
   margin-bottom: 35px
@@ -21,12 +41,30 @@
   font-weight: $font-weight-medium
   font-size: 20px
 
+  +max-w($mobile-md)
+    display: none
+
 .empower__text--mobile 
   display: none;
+
+  +max-w($mobile-md)
+    display: block
+    margin-top: 0
+    margin-bottom: 40px
+    color: $color-second
+    font-weight: 500
+    font-size: 20px
+    text-align: center
+  
+  +max-w($mobile-xs)
+    font-size: 15px
 
 .button--orange 
   padding: 10px 36px
   background: #FFA62B
+
+  +max-w($mobile-md)
+    margin-bottom: 25px
 
 .button--transparent 
   margin-left: 8px
@@ -39,12 +77,26 @@
   display: flex
   margin-right: -30px
 
+  +max-w($mobile-lg)
+    flex-wrap: wrap
+    margin-right: 0
+
 .empower__card 
   width: calc(33.33% - 30px)
   margin: 0px 30px -19px 0px
   padding: 35px 20px 31px 40px
   background-color: #fff;
   box-shadow: 0px 13px 19px rgba(0, 0, 0, 0.07)
+
+  +max-w($laptop-md)
+    margin: 0px 15px -19px 0px
+    padding: 15px 30px
+
+  +max-w($mobile-lg)
+    width: 97%
+    padding: 32px 46px 35px 40px
+    margin-bottom: 30px
+    margin-right: 0
 
 .empower__card--choosen 
   background-color: #00a0c1
@@ -66,39 +118,10 @@
   line-height: 1.35
   letter-spacing: 0.1px
 
-.empower__card-title--mobile 
+.empower__card-title--mobile
   display: none
-
-.empower__card-text 
-  margin: 0
-  color: $color-second
-  font-weight: $font-weight-medium
-  letter-spacing: 0.2px
-
-@media (max-width: 1280px) 
-  .empower__card 
-    margin: 0px 15px -19px 0px
-    padding: 15px 30px
-
-@media (max-width: 805px) 
-  .empower 
-    margin-bottom: 0
-    padding-bottom: 169px
-
-  .empower__cards 
-    flex-wrap: wrap
-    margin-right: 0
   
-  .empower__card 
-    width: 97%
-    padding: 32px 46px 35px 40px
-    margin-bottom: 30px
-    margin-right: 0
-  
-  .empower__card-title--none 
-    display: none
-  
-  .empower__card-title--mobile 
+  +max-w($laptop-md)
     display: block
     margin: 0px 0px 8px 0px
     color: $color-text-base
@@ -107,35 +130,13 @@
     line-height: 1.35
     letter-spacing: 0.1px
 
-@media (max-width: 640px) 
-  .empower__content 
-    display: flex
-    flex-direction: column
-    align-items: center
-    max-width: 333px
+.empower__card-text 
+  margin: 0
+  color: $color-second
+  font-weight: $font-weight-medium
+  letter-spacing: 0.2px
 
-  .empower__title 
-    font-weight: $font-weight-bold
-    font-size: 40px
-    line-height: 1.45
-    text-align: center
-
-  .empower__text 
+.empower__card-title--none
+  +max-w($mobile-lg)
     display: none
-  
-  .empower__text--mobile 
-    display: block
-    margin-top: 0
-    margin-bottom: 40px
-    color: $color-second
-    font-weight: 500
-    font-size: 20px
-    text-align: center
-  
-  .empower__title 
-    margin-bottom: 40px
-  
-  .button--orange 
-    margin-bottom: 25px
-  
-  
+

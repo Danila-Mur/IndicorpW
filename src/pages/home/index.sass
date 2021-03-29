@@ -1,10 +1,13 @@
-
-.home 
+.main-intro 
   background: $color-background url('./main-bg.jpg') no-repeat top
   background-size: cover
-@media (max-width: 991px)
-  .home 
-    background: none
-@media (max-width: 420px) 
-  .home 
-    background: url('./main-mobile-bg.jpg')
+
+  +max-w($tablet)
+    background-image: none
+
+  +max-w($mobile-lg)
+    background-image: url('./main-mobile-bg.jpg')
+    background-repeat: no-repeat
+    background-size: cover
+  +max-w($mobile-xs)
+    background-image: none

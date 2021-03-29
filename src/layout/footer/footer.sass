@@ -2,10 +2,22 @@
   padding-top: 50px
   background-color: #16697a
 
+  +max-w($mobile-sm)
+    padding-top: 54px
+
 .footer__content 
   display: flex
   align-items: flex-start
   margin-bottom: 51px
+
+  +max-w($mobile-lg)
+    flex-direction: column
+    align-items: start
+
+  +max-w($mobile-sm)
+    margin-bottom: 55px
+    padding-left: 52px
+    padding-top: 2px
 
 .footer__links 
   //display: flex
@@ -15,10 +27,21 @@
   margin-right: 30px
   column-gap: 27px
 
+  +max-w($tablet)
+    grid-template-columns: repeat(auto-fill, 152px)
+
 .footer__column 
   max-width: 152px
   margin-right: 58px
 
+  +max-w($tablet)
+    margin: 0 52px 25px 0
+
+  +max-w($mobile-lg)
+    margin: 0
+
+  +max-w($mobile-sm)
+    margin-bottom: 30px
 
 .footer__links .footer__column:last-child 
   margin-right: 0
@@ -58,9 +81,20 @@
   padding: 25px 0
   background-color: #fff
 
+  +max-w($mobile-sm)
+    padding: 25px 0 55px 0
+
 .copyright__content 
   display: flex
   justify-content: space-between
+
+  +max-w($mobile-lg)
+    flex-direction: column
+    align-items: start
+
+  +max-w($mobile-sm)
+    padding-left: 52px
+    padding-top: 5px
 
 .copyright__title 
   margin: 0
@@ -68,6 +102,13 @@
   font-weight: 600
   line-height: 1.75
   letter-spacing: 0.2px
+
+  +max-w($mobile-lg)
+    margin-bottom: 50px
+
+  +max-w($mobile-sm)
+    margin-bottom: 50px
+    padding-left: 6px;
 
 .copyright__social 
   display: flex
@@ -79,49 +120,3 @@
 
 .copyright__social-link:last-child 
   margin-right: 0
-
-
-@media ( max-width: 991px )
-  .footer__links 
-    grid-template-columns: repeat(auto-fill, 152px)
-  
-  .footer__column 
-    margin: 0 52px 25px 0
-  
-@media ( max-width: 805px )
-  .footer__content 
-    flex-direction: column
-    align-items: start
-  
-  .footer__column 
-    margin: 0 0 0 0
-  
-  .copyright__content 
-    flex-direction: column
-    align-items: start
-  
-  .copyright__title 
-    margin-bottom: 50px
-  
-@media ( max-width: 420px )
-  .footer
-    padding-top: 54px
-    
-  .footer__content 
-    margin-bottom: 55px
-    padding-left: 46px
-    padding-top: 5px
-  
-  .footer__column 
-    margin-bottom: 30px
-  
-  .copyright 
-    padding: 25px 0 55px 0
-  
-  .copyright__content 
-    padding-left: 52px
-    padding-top: 5px
-  
-  .copyright__title 
-    margin-bottom: 50px
-  

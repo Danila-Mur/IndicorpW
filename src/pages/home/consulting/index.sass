@@ -2,11 +2,27 @@
   padding: 38px 0
   background-color: #fff
 
+  +max-w($mobile-sm)
+    padding-top: 0
+    padding-bottom: 0
+
+.consulting__header
+
+  +max-w($tablet)
+    margin: 0 0 47px
+
 .consulting__content 
   display: flex
   align-items: center
   justify-content: space-between
   padding-right: 13px
+
+  +max-w($tablet)
+    flex-direction: column
+    align-items: start
+
+  +max-w($mobile-sm)
+    padding: 41px 50px;
 
 .consulting__title 
   margin-bottom: 10px
@@ -16,6 +32,9 @@
   font-size: 24px
   line-height: 1.35
   letter-spacing: 0.1px
+
+  +max-w($mobile-sm)
+    padding-top: 0
 
 .consulting__text 
   margin: 0
@@ -29,22 +48,3 @@
   border-radius: 5px
   background-color: #ffa62b
   color: #ffffff
-
-@media ( max-width: 991px )
-  .consulting__content 
-    flex-direction: column
-    align-items: start
-  
-  .consulting__header 
-    margin: 0 0 47px
-
-@media ( max-width: 420px )
-  .consulting 
-    padding-top: 0
-    padding-bottom: 0
-  
-  .consulting__content 
-    padding: 37px 50px
-  
-  .consulting__title 
-    padding-top: 0

@@ -2,49 +2,44 @@
   padding: 41px 0px 140px 0px
   background-color: $color-background
 
+  +max-w($laptop-md)
+    padding-top: 61px
+
 .clients__brands 
   display: flex
   align-items: center
+  
+  +max-w($laptop-md)
+    flex-wrap: wrap
+    justify-content: center
+
+  +max-w($mobile-md)
+    flex-direction: column
+    align-items: center
+    justify-content: center
 
 .clients__brands-img 
   margin-right: 70px
 
-.clients__brands--mobile 
-  display: none
-
-@media (max-width: 1280px) 
-  .clients__brands 
-    flex-wrap: wrap
-    justify-content: center
-  
-  .clients__brands-img 
+  +max-w($laptop-md)
     margin: 0 30px 0 0
-  
 
-@media (max-width: 991px) 
-  .clients__brands-img 
+  +max-w($tablet)
     margin: 20px 100px 0 0
-  
 
-@media (max-width: 640px) 
-  .clients 
-    padding-top: 61px
-    padding-bottom: 0
-  
-  .clients__brands 
-    flex-direction: column
-    align-items: center
-    justify-content: center
-  
-  .clients__brands-img 
+  +max-w($mobile-md)
     margin-top: 0
     margin-right: 0
     margin-bottom: 60px
-  
-  .clients__brands--none 
-    display: none
-  
-  .clients__brands--mobile 
+
+.clients__brands--mobile 
+  display: none
+
+  +max-w($mobile-md)
     display: flex
     padding: 21px 0
-  
+
+.clients__brands--none
+
+  +max-w($mobile-md)
+    display: none

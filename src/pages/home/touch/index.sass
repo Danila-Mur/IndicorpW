@@ -2,10 +2,18 @@
   padding: 80px 0px 148px 0px
   background-color: #f3f3f3
 
+  +max-w($mobile-sm)
+    padding-top: 73px
+    padding-bottom: 96px
+
 .touch__header 
   max-width: 470px
   margin: 0 auto 80px
   text-align: center
+
+  +max-w($mobile-sm)
+    max-width: 310px
+    margin-bottom: 86px
 
 .touch__title 
   margin-bottom: 7px
@@ -27,6 +35,10 @@
   align-items: center
   justify-content: center
 
+  +max-w($tablet)
+    flex-direction: column
+    align-items: center
+
 .touch__card 
   display: flex
   align-items: center
@@ -35,10 +47,23 @@
   /*  padding: 50px 53px 60px 54px */
   background-color: #fff
 
+  +max-w($tablet)
+    margin-bottom: 30px  
+    padding: 52px 55px
+
+  +max-w($mobile-xs)
+    padding: 28px 31px
+
 .touch__card--center 
   padding: 80px 55px
   background-color: $color-text-base
   color: #fff
+
+  +max-w($mobile-sm)
+    padding: 80px 54px
+
+  +max-w($mobile-xs)
+    padding: 28px 31px
 
 .touch__card--center .touch__card-email 
   color: #fff
@@ -46,8 +71,6 @@
 
 .touch__card--center .touch__card-title 
   color: #fff
-
-
 
 .touch__card-img 
   margin-bottom: 12px
@@ -82,24 +105,3 @@
   color: #fff
   border: 1px solid #fff
   border-radius: 5px
-
-@media (max-width: 991px) 
-  .touch__cards 
-    flex-direction: column
-    align-items: center
-  
-  .touch__card 
-    margin: 0 0 30px 0
-    padding: 50px 55px
-
-@media ( max-width: 420px )
-  .touch 
-    padding-top: 73px
-    padding-bottom: 104px
-  
-  .touch__header 
-    max-width: 310px
-    margin-bottom: 86px
-  
-  .touch__card--center 
-    padding: 80px 54px

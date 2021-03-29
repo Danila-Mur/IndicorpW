@@ -1,12 +1,12 @@
 import "./header.sass";
 
-const btnBurger = document.querySelector(".header__togler");
+const btnBurger = document.querySelector(".js--burger");
 const header = document.querySelector(".header");
 const nav = document.querySelector(".nav");
 
 function navMenu() {
   header.classList.toggle("header--mobile");
-  nav.classList.toggle("is-open");
+  nav.classList.toggle("js__open--nav");
 }
 
 btnBurger.addEventListener("click", navMenu);

@@ -4,16 +4,31 @@
   padding: 100px 0px
   background-color: #fff
 
+  +max-w($mobile-sm)
+    padding-top: 90px
+
 .service__header 
   max-width: 511px
   margin: 0 auto 100px
   text-align: center
 
+  +max-w($mobile-sm)
+    max-width: 324px
+    margin: 0 auto 118px
+
 .service__title 
   margin-bottom: 15px
 
+  +max-w($mobile-lg)
+    display: none
+
 .service__title--mobile 
   display: none
+
+  +max-w($mobile-lg)
+    display: block
+    margin-top: 0
+    margin-bottom: 10px
 
 .service__title--second 
   color: $color-text-base
@@ -34,16 +49,42 @@
   justify-content: space-between
   align-items: flex-start
 
+  +max-w($tablet)
+    display: flex
+    flex-direction: column
+    align-items: center
+
 .service__content-video 
   width: 600px
   height: 442px
 
+  +max-w($laptop-md)
+    width: 333px
+    height: 440px
+
+  +max-w($mobile-xs)
+    width: 300px
+
 .service__video 
   position: relative
+
+  +max-w($tablet)
+    margin-right: 25px
+    margin-bottom: 30px
+    
+  +max-w($mobile-xs)
+    margin-right: 0
 
 .service__poster 
   position: absolute
   width: 100%
+  
+  +max-w($laptop-md)
+    width: 333px
+    height: 440px
+
+  +max-w($mobile-xs)
+    width: 300px
 
 .service__button-play 
   position: absolute
@@ -59,11 +100,19 @@
   border: none
   border-radius: 50%
   cursor: pointer
+  
+  +max-w($mobile-sm)
+    top: -4px
+    right: -7px
 
 .service__content-box 
   max-width: 334px
   padding-top: 18px
   padding-left: 7px
+
+  +max-w($mobile-lg)
+    padding-top: 37px
+    padding-left: 0
 
 .service__content-title 
   margin-bottom: 10px
@@ -101,45 +150,3 @@
 
 .display--none 
   display: none
-
-@media ( max-width: 1280px )
-  .service__content-video 
-    width: 333px
-    height: 440px
-  
-  .service__poster 
-    width: 333px
-    height: 440px
-  
-@media ( max-width: 991px )
-  .service__content 
-    display: flex
-    flex-direction: column
-  
-  .service__video 
-    margin-right: 25px
-    margin-bottom: 30px
-
-@media ( max-width: 420px )
-  .service 
-    padding-top: 90px
-  
-  .service__header 
-    max-width: 324px
-    margin: 0 auto 118px
-  
-  .service__title 
-    display: none
-
-  .service__button-play
-    top: -4px
-    right: -7px
-  
-  .service__title--mobile 
-    display: block
-    margin-top: 0
-    margin-bottom: 10px
-  
-  .service__content-box 
-    padding-top: 37px
-    padding-left: 0

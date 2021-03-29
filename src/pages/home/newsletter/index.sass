@@ -2,6 +2,10 @@
   background-color: $color-text-base
   padding: 57px 0px 20px 0px
 
+  +max-w($mobile-lg)
+    background-color: #16697a
+    padding: 0
+
 .newsletter__wrapper 
   padding: 0 32px
 
@@ -14,6 +18,14 @@
   border-radius: 2px
   background-color: #16697a
 
+  +max-w($mobile-lg)
+    flex-direction: column
+    margin: 0
+
+  +max-w($mobile-sm)
+    padding: 34px 10px 30px 8px
+    text-align: center
+
 .newsletter__title 
   max-width: 266px
   margin: 0
@@ -22,6 +34,9 @@
   line-height: 1.35
   letter-spacing: 0.1px
   color: #ffffff
+
+  +max-w($mobile-lg)
+    margin: 0 0 30px 0
 
 .newsletter__form 
   position: relative
@@ -36,6 +51,13 @@
   letter-spacing: 0.2px
   color: $color-second
 
+  +max-w($mobile-md)
+    max-width: 337px
+    padding: 12px 122px 15px 20px
+
+  +max-w($mobile-xs)
+    max-width: 300px
+
 .button__newsletter--orange
   position: absolute
   right: 1px
@@ -48,28 +70,5 @@
   letter-spacing: 0.2px
   background-color: #ffa62b
 
-@media ( max-width: 805px )
-  .newsletter 
-    background-color: #16697a
-    padding: 0
-  
-  .newsletter__content 
-    flex-direction: column
-    margin: 0
-  
-  .newsletter__title 
-    margin: 0 0 30px 0
-  
-
-@media ( max-width: 640px )
-  .newsletter__input 
-    max-width: 320px
-    padding: 15px 122px 15px 20px
-  
-
-@media ( max-width: 420px )
-  .newsletter__content 
-    padding: 34px 10px 30px 8px
-    text-align: center
-  
-  
+  +max-w($mobile-md)
+    padding: 13px 27px;
