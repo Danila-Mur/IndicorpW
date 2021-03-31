@@ -1,4 +1,5 @@
-import "core-js/es/promise";
+import "animate.css/animate.css";
+import WOW from "wow.js/dist/wow.min.js";
 
 import $ from "jquery";
 
@@ -16,4 +17,6 @@ $(() => {
   initLayout();
   initBlocks();
   initPages();
+
+  new WOW().init();
 });
