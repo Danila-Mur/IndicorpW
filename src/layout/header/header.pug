@@ -1,22 +1,26 @@
-header.header.wow.fadeInUp.header--mobile
-  .container
+header.header
+  .container.header__wrapper
     .header__inner
-      a.header__logo.logo(href="#")
+      a.header__logo.logo.wow.fadeInLeft(href="#", data-wow-delay="0.8s")
         img(src="images/indicorp/logo.svg", alt="Logo", class="logo__img")
-      nav.nav.js__open--nav
-        ul.nav__list
-          li.nav__item  
-            a.nav__link(href="#") Home
-          li.nav__item
-            a.nav__link(href="#") Product
-          li.nav__item
-            a.nav__link(href="#") Pricing
-          li.nav__item
-            a.nav__link(href="#") Contact
-      button.header__search(type="button")
-        img.header__search-img(src="images/indicorp/search-btn.svg", alt="Search")
-      button.header__basket(type="button")
-        img.header__basket-img(src="images/indicorp/basket.svg", alt="Basket")
-      button.header__burger.js--burger(type="button")
-        img.header__burger-img(src="images/indicorp/navbar-toggler.svg", alt="Burger")
+      .header__buttons
+        button.header__search.wow.fadeInRightBig(type="button", data-wow-delay="1s")
+          img.header__search-img(src="images/indicorp/search-btn.svg", alt="Search")
+        button.header__basket.wow.fadeInRightBig(type="button", data-wow-delay="1.2s")
+          img.header__basket-img(src="images/indicorp/basket.svg", alt="Basket")
+        //button.header__burger.js-burger.wow.fadeInRightBig(type="button", data-wow-delay="1.4s")
+          img.header__burger-img(src="images/indicorp/navbar-toggler.svg", alt="Burger")
+        .header__burger.js-burger.wow.fadeInRightBig(data-wow-delay="1.4s")
+          span.header__burger-item
+    nav.nav.js-open-nav
+      ul.nav__list
+        li.nav__item.wow.fadeInRightBig(data-wow-delay="1s") 
+          a.nav__link(href="#") Home
+        li.nav__item.wow.fadeInRightBig(data-wow-delay="1.2s")
+          a.nav__link(href="#") Product
+        li.nav__item.wow.fadeInRightBig(data-wow-delay="1.4s") 
+          a.nav__link(href="#") Pricing
+        li.nav__item.wow.fadeInRightBig(data-wow-delay="1.6s") 
+          a.nav__link(href="#") Contact
+      
         

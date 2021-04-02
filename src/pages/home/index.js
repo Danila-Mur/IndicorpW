@@ -4,11 +4,12 @@ import "./index.pug";
 import "./empower";
 import "./choose";
 import "./advice";
-import "./service";
+import initService from "./service";
 import "./clients";
-import "./newsletter"
+import "./newsletter";
 import "./touch";
 import "./consulting";
 
-
-export default () => {};
+export default () => {
+  initService();
+};

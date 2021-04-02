@@ -2,7 +2,15 @@
   padding: 36px 0
   
   +max-w($mobile-lg)
-    padding-bottom: 205px
+    background: #fff
+
+.header__wrapper
+  display: flex
+  align-items: center
+
+  +max-w($mobile-lg)
+    flex-direction: column
+    justify-content: space-between
 
 
 .header__inner 
@@ -10,7 +18,8 @@
   align-items: center
 
   +max-w($mobile-lg)
-    margin-bottom: 261px
+    justify-content: space-between
+    width: 100%
 
 .header__logo 
   margin-right: 150px
@@ -23,8 +32,10 @@
     margin-right: 30px
   
 .nav
+
   +max-w($mobile-lg)
-    position: absolute
+    display: none
+    padding-top: 35px
 
   +max-w($mobile-sm)
     margin: 0
@@ -36,14 +47,15 @@
   padding: 0
   
   +max-w($mobile-lg)
-    position: relative
-    left: 108px
-    top: 260px
-    right: 0
-    bottom: 0
     display: flex
     flex-direction: column
-    align-items: flex-start
+    align-items: center
+
+  +max-w($mobile-md)
+    left: 108px
+
+  +max-w($mobile-xs)
+    left: 95px
     
 .nav__item 
   margin-right: 50px
@@ -52,6 +64,7 @@
   list-style-type: none
 
   +max-w($mobile-lg)
+    margin-right: 0
     margin-bottom: 30px
     font-size: 30px
     line-height: 1.5
@@ -66,20 +79,82 @@
   +max-w($mobile-lg)
     font-weight: 400
 
+.header__buttons
+  display: flex
+  align-items: center
+
 .header__search 
   display: none
 
 .header__basket 
   display: none
 
-.header__burger 
+// .header__burger 
+//   display: none
+
+.header__burger
   display: none
 
   +max-w($mobile-lg)
-    position: static
+    position: relative
     display: block
-    background-color: transparent
-    border: none
+    width: 24px
+    height: 12px
+
+.header__burger-item
+  position: absolute
+  width: 24px
+  height: 2px
+  background-color: #737373
+  top: 0
+  right: 0
+  transition: transform .3s, top .3s, right .3s 
+
+  &::after
+    position: absolute
+    content: ""
+    display: block
+    width: 18px
+    height: 2px
+    top: 6px
+    right: 0
+    background-color: #737373
+    transition: transform .3s, top .3s, right .3s, width .3s 
+
+  &::before
+    position: absolute
+    content: ""
+    display: block
+    width: 12px
+    height: 2px
+    top: 12px
+    right: 0
+    background-color: #737373
+
+  &--open
+    width: 24px
+    height: 2px
+    background-color: #737373
+    top: 5px
+    right: -1px
+    transform: rotate(45deg)
+
+    &::after
+      width: 24px
+      height: 2px
+      top: 0px
+      right: 0
+      background-color: #737373
+      transform: rotate(-90deg)
+
+    &::before
+      display: none
+
+  // +max-w($mobile-lg)
+  //   position: static
+  //   display: block
+  //   background-color: transparent
+  //   border: none
 
 .header__basket
   +max-w($mobile-lg)
@@ -95,12 +170,3 @@
     margin-right: 12px
     border: none
     background-color: transparent
-
-.js__open--nav 
-  +max-w($mobile-lg)
-    display: none
-
-.header--mobile  
-  +max-w($mobile-lg)
-    padding-bottom: 0
-  

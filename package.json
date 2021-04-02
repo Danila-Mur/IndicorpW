@@ -62,7 +62,8 @@
     "webpack-cli": "^3.3.12",
     "webpack-dev-server": "^3.11.0",
     "webpack-manifest-plugin": "^2.2.0",
-    "wow.js": "^1.2.2"
+    "wow.js": "^1.2.2",
+    "yt-player": "^3.5.0"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",

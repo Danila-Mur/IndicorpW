@@ -1,29 +1,15 @@
+import YTPlayer from "yt-player";
 import "./index.sass";
 
-/* const buttonPlay = document.querySelector(".js__button-play");
-const videoPoster = document.querySelector(".service__poster");
-const video = document.querySelector(".service__content-video");
+export default () => {
+  const player = new YTPlayer("#player");
 
-function videoPlay() {
-  buttonPlay.classList.add("display--none");
-  videoPoster.classList.add("display--none");
-  video.setAttribute(
-    "src",
-    "https://www.youtube.com/embed/wnTZyvOs1-k?&autoplay=1"
-  );
-}
+  player.load("M7lc1UVf-VE");
+  player.setSize("600", "442");
 
-buttonPlay.addEventListener("click", videoPlay); */
-
-$(".js__button-play").on("click", function(event) {
-  // $(".service__poster").css("display", "none");
-  // $(this).css("display", "none");
-  const $this = $(this);
-  const $video = $this.parent().find(".service__content-video");
-  let url = $video.prop('src');
-
-  $this.parent().addClass('service__video--play');
-  $video.prop('src', `${url}&autoplay=1`);
-  event.preventDefault();
-  // $video.attr("src", "https://www.youtube.com/embed/wnTZyvOs1-k?&autoplay=1");
-});
+  $(".js-button-play").on("click", function() {
+    $(".service__poster").addClass("display--none");
+    $(this).addClass("display--none");
+    player.play();
+  });
+};

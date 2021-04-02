@@ -13,33 +13,23 @@
     flex-wrap: wrap
     justify-content: center
 
-  +max-w($mobile-md)
+  +max-w($mobile-lg)
     flex-direction: column
     align-items: center
     justify-content: center
 
-.clients__brands-img 
+.clients__brands-img
+  max-width: 153px
+  max-height: 72px
   margin-right: 70px
 
   +max-w($laptop-md)
-    margin: 0 30px 0 0
+    margin-bottom: 30px
 
   +max-w($tablet)
     margin: 20px 100px 0 0
 
-  +max-w($mobile-md)
+  +max-w($mobile-lg)
     margin-top: 0
     margin-right: 0
-    margin-bottom: 60px
-
-.clients__brands--mobile 
-  display: none
-
-  +max-w($mobile-md)
-    display: flex
-    padding: 21px 0
-
-.clients__brands--none
-
-  +max-w($mobile-md)
-    display: none
+    margin-bottom: 70px

@@ -11,11 +11,26 @@ function navMenu() {
 
 btnBurger.addEventListener("click", navMenu); */
 
-$(".js--burger").on("click", function() {
-  $(".nav").toggle();
-  if ($(".header").hasClass("header--mobile")) {
+const $burger = $(".js-burger");
+const $burgerItem = $burger.find(".header__burger-item");
+const $menu = $(".js-open-nav");
+
+$(window).on('resize', function() {
+  if ($(document).outerWidth() > 768) {
+    $menu.css("display", "");
+    $burgerItem.hasClass("header__burger-item--open")
+      ? $burgerItem.removeClass("header__burger-item--open")
+      : null;
+  }
+
+      
+});
+$burger.on("click", function() {
+  $menu.slideToggle();
+  $burgerItem.toggleClass("header__burger-item--open");
+  /* if ($(".header").hasClass("header--mobile")) {
     $(".header").removeClass("header--mobile");
   } else {
     $(".header").addClass("header--mobile");
-  }
+  } */
 });
