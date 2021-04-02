@@ -15,11 +15,15 @@ function videoPlay() {
 
 buttonPlay.addEventListener("click", videoPlay); */
 
-$(".js__button-play").on("click", function() {
-  $(".service__poster").css("display", "none");
-  $(".js__button-play").css("display", "none");
-  $(".service__content-video").attr(
-    "src",
-    "https://www.youtube.com/embed/wnTZyvOs1-k?&autoplay=1"
-  );
+$(".js__button-play").on("click", function(event) {
+  // $(".service__poster").css("display", "none");
+  // $(this).css("display", "none");
+  const $this = $(this);
+  const $video = $this.parent().find(".service__content-video");
+  let url = $video.prop('src');
+
+  $this.parent().addClass('service__video--play');
+  $video.prop('src', `${url}&autoplay=1`);
+  event.preventDefault();
+  // $video.attr("src", "https://www.youtube.com/embed/wnTZyvOs1-k?&autoplay=1");
 });
