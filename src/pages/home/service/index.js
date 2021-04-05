@@ -8,8 +8,10 @@ export default () => {
   player.setSize("100%", "100%");
 
   $(".js-button-play").on("click", function() {
-    $(".service__poster").addClass("display--none");
-    $(this).addClass("display--none");
+    // $(".service__poster").addClass("display--none");
+    // $(this).addClass("display--none");
+
+    $(this).parent().addClass('service__video--none');
     player.play();
   });
 };
