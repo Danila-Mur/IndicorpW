@@ -5,7 +5,7 @@ export default () => {
   const player = new YTPlayer("#player");
 
   player.load("M7lc1UVf-VE");
-  player.setSize("600", "442");
+  player.setSize("100%", "100%");
 
   $(".js-button-play").on("click", function() {
     $(".service__poster").addClass("display--none");
