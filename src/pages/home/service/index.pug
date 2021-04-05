@@ -1,7 +1,7 @@
 section.service
   .container 
     .service__header.wow.slideInDown(data-wow-delay="0.5s")
-      h2.service__title.title.service__title--none
+      h2.service__title.title
         | We are providing best business service.
       h2.service__title.title.service__title--mobile
         | We take care customers our all expert here.
@@ -11,10 +11,11 @@ section.service
         | physics: Newtonian mechanics
     .service__content.wow.slideInUp(data-wow-delay="0.5s")
       .service__video
-        #player.service__video-box
-        img.service__poster(src="images/indicorp/poster-video.jpg", alt="Poster")
-        button.service__button-play.js-button-play(type='button')
-          img.service__play-img(src="images/indicorp/play.svg", alt="Play")
+        .service__video-inner
+          #player.service__video-box
+          img.service__poster(src="images/indicorp/poster-video.jpg", alt="Poster")
+          button.service__button-play.js-button-play(type='button')
+            img.service__play-img(src="images/indicorp/play.svg", alt="Play")
       .service__content-box
         h2.service__content-title.title
           | Most trusted in our field
