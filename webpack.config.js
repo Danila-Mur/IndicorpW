@@ -31,7 +31,7 @@ const SERVER_PORT = 3000;
  */
 const IS_LOCAL_BUILD = true;
 const PATH_SRC = path.resolve(__dirname, "src");
-const PATH_BUILD = path.resolve(__dirname, "build");
+const PATH_BUILD = path.resolve(__dirname, "docs");
 const PATH_BASE = "webpack/";
 const PATH_PUBLIC_BUILD = IS_LOCAL_BUILD ? "../../" : "/";
 const PATH_PUBLIC = IS_PRODUCTION
