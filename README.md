@@ -1,5 +1,8 @@
 # FRONTEND BOILERPLATE
 
+## Link
+https://danila-mur.github.io/IndicorpW/
+
 ## Install
 ```sh
 $ git clone 
@@ -17,3 +20,4 @@ npm run build   # for build. creating folder "build"
 ## HTML Templates 
 
 > Render [Pug](https://pugjs.org/api/getting-started.html) templates
+
